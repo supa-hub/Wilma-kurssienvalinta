@@ -46,44 +46,44 @@ class kurssienvalinta:
 
         self.driver.get("https://edutampere.inschool.fi/selection/view?")
         time.sleep(2)
-
         
-        try:
-            print("JOO")
-            self.driver.get("https://edutampere.inschool.fi/selection/view?")
-            time.sleep(2)
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]/a")
-            elem.click()
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[2]/a")
-            elem.click()
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[3]/a")
-            elem.click()
-            time.sleep(1)
-            print("juuuuu")
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[1]/label/input")
-            elem.click()
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[1]/ul/li/a[22]")
-            elem.click()
-            time.sleep(0.5)
-            print("joo")
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]/a/spanjooooooo")
+        while self.j:
+          try:
+              print("JOO")
+              self.driver.get("https://edutampere.inschool.fi/selection/view?")
+              time.sleep(2)
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]/a")
+              elem.click()
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[2]/a")
+              elem.click()
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[3]/a")
+              elem.click()
+              time.sleep(1)
+              print("juuuuu")
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[1]/label/input")
+              elem.click()
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[2]/div/div/div/div[2]/ul/li[1]/ul/li/a[22]")
+              elem.click()
+              time.sleep(0.5)
+              print("joo")
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]/a/spanjooooooo")
 
-            print("eiii")
-        except NoSuchElementException as e:
-            print("eipä ollu ;(")
-            self.driver.get("https://edutampere.inschool.fi/selection/view?")
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]/a")
-            elem.click()
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[2]/a")
-            elem.click()
-            elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[3]/a")
-            elem.click()
-            time.sleep(1)
-            for elements in element_list:
-                elem = self.driver.find_element_by_xpath(elements)
-                elem.click()
-            self.j = False
-            
+              print("eiii")
+          except NoSuchElementException as e:
+              print("eipä ollu ;(")
+              self.driver.get("https://edutampere.inschool.fi/selection/view?")
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]/a")
+              elem.click()
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[2]/a")
+              elem.click()
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[3]/a")
+              elem.click()
+              time.sleep(1)
+              for elements in element_list:
+                  elem = self.driver.find_element_by_xpath(elements)
+                  elem.click()
+              self.j = False
+
             
             
 
