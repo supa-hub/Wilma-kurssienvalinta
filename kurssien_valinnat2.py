@@ -5,7 +5,7 @@ from pathlib import Path
 from selenium.common.exceptions import NoSuchElementException
 
 sähköposti = ""
-password = ""
+salasana = ""
 
 elements_list = ["/html/body/div[2]/div/div[2]/div/div/div[1]/div[2]/ul/li[4]/ul/li/a[22]",
                  "/html/body/div[2]/div/div[2]/div/div/div[1]/div[2]/ul/li[2]/ul/li/a[25]"]
@@ -30,7 +30,7 @@ class kurssienvalinta:
         elem.click()
         time.sleep(3)
         elem = self.driver.find_element_by_xpath("/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[3]/div/div[2]/input")
-        elem.send_keys(password)
+        elem.send_keys(salasana)
         elem = self.driver.find_element_by_xpath("/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div/div/div[3]/div/div[2]/div/div[4]/div[2]/div/div/div/div/input")
         elem.click()
         time.sleep(1)
