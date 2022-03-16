@@ -66,7 +66,7 @@ class kurssienvalinta:
               elem.click()
               time.sleep(0.5)
               print("joo")
-              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]/a/spanjooooooo")
+              elem = self.driver.find_element_by_xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/ul[2]/li[1]/a/span")
 
               print("eiii")
           except NoSuchElementException as e:
