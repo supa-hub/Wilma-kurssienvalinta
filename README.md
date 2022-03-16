@@ -22,8 +22,8 @@ First you need to open the code file and insert into the parts sähköposti and 
 PLEASE NOTE that oyu haveto put the account Email and password into the quotemarks, SO THESE: "", so
 for example: sähköposti = "juu@gmail.com",  salasana = "moi123"
 Then you will have to use inspect element from chrome to get the full Xpath of every course block in the kurssitarjotin in Wilma. 
-THese Xpaths you have to insert into the list "elements_list", by putting the xpath between quote marks as before into the [] signs. 
+These Xpaths you have to insert into the list "elements_list", by putting the xpath between quote marks as before into the [] signs. 
 There are 2 of those kinds of Xpaths already in the code, you can use them as example
 
-Then Voila, just run the code.
+Then voilà, just run the code.
 
